@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi chica ❤️</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffebf0;
+            color: #ff3366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 32px;
+            color: #ff6699;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .art {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 30px; /* Espacio entre el corazón y los otros elementos */
+        }
+        .moon-gato-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .moon img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+        .emoji {
+            font-size: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        pre {
+            font-size: 18px;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+        }
+        #imagen img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Para mi chica ❤️</h1>
+    <div class="content">
+        <!-- Corazón en ASCII -->
+        <div class="art">
+            <pre>
+               ████       ████      
+            ████████   ████████    
+          ██████████████████████  
+         ████████████████████████ 
+         ████████████████████████ 
+          ██████████████████████  
+            ██████████████████    
+              ██████████████      
+                ██████████        
+                  ██████          
+                    ██            
+            </pre>
+        </div>
+
+        <!-- Luna y emoji de gato a la derecha -->
+        <div class="moon-gato-container">
+            <!-- Luna con enlace a la canción -->
+            <div class="moon">
+                <a href="https://www.youtube.com/watch?v=ql9VWZ3KfQg" target="_blank">
+                    <img src="https://www3.gobiernodecanarias.org/medusa/mediateca/ecoescuela/wp-content/uploads/sites/2/2013/11/12-Luna.png" alt="Luna">
+                </a>
+            </div>
+            <!-- Emoji de gato que muestra la imagen al hacer clic -->
+            <div class="emoji" onclick="mostrarImagen()">
+                🐱
+            </div>
+            <!-- Imagen oculta que se muestra al hacer clic en el emoji -->
+            <div id="imagen" style="display: none; margin-top: 20px;">
+                <img src="kira.jpg" alt="Imagen especial">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar la imagen cuando se hace clic en el emoji
+        function mostrarImagen() {
+            const imagen = document.getElementById('imagen');
+            imagen.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
